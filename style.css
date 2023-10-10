@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.showErrorMsg{
+    @apply top-0 animate-[showMsg_1s_ease]
+}
+.exitErrorMsg{
+    @apply -top-[10%] animate-[exitMsg_1s_ease]
+}
+.wrongAnswer{
+    @apply bg-gradient-to-tr from-red-300 via-red-600 to-red-900
+}
+.alert{
+    @apply bg-gradient-to-tr from-yellow-300 via-yellow-600 to-yellow-900
+}
+.active{
+    @apply flex animate-[showGameOver_0.5s_ease]
+}
+.unActive{
+    @apply hidden animate-[exitGameOver_0.5s_ease]
+}
